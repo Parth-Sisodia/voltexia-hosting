@@ -1,120 +1,117 @@
-# Voltexia Hosting Terms of Service
-## Last Updated: 9-16-2026 [MM-DD-YYYY]
+# Voltexia Hosting — Terms of Service
+## Last Updated: 09-16-2026
 
 # 1. Definitions
 
-1.1 **“Company”** – Voltexia Hosting, the provider of game hosting and VPS hosting services.
+1.1 **“Company”** refers to Voltexia Hosting, including its owners, employees, contractors, and affiliates.
 
-1.2 **“User” / “Client”** – Any individual or entity accessing, purchasing, or using Voltexia Hosting’s services, website, or Discord server.
+1.2 **“User” / “Client”** refers to any individual or entity that accesses, purchases, or utilizes the Company’s Services or Platform.
 
-1.3 **“Services”** – Any game server hosting, VPS hosting, related software, control panels, APIs, and support provided by the Company.
+1.3 **“Services”** refers to all hosting products offered by the Company, including game hosting, VPS hosting, related software, control panels, APIs, and technical support.
 
-1.4 **“Platform”** – Collectively, the Company’s website, hosting infrastructure, client portal, and official Discord server.
+1.4 **“Platform”** refers to the Company’s website, hosting infrastructure, client portal, and Official Discord Server.
 
-1.5 **“Official Discord Server”** – The Discord guild operated by Voltexia Hosting for community and support.
+1.5 **“Official Discord Server”** refers to the Discord community operated and administered by the Company.
 
-1.6 **“Resource Abuse”** – As defined in Section 4.
+1.6 **“Resource Abuse”** refers to any excessive or abnormal use of system resources as defined in Section 4.
 
-1.7 **“Enforcement Action”** – Any suspension, termination, restriction, or warning imposed on a User’s Hosting Account or Platform access.
+1.7 **“Enforcement Action”** refers to any suspension, termination, restriction, or warning applied to a User’s account or access.
 
-1.8 **“Case Review”** – Initial appeal of an Enforcement Action submitted by a User.
+1.8 **“Case Review”** refers to the initial appeal submitted by a User regarding an Enforcement Action.
 
-1.9 **“Rereview”** – Second-level appeal reviewed by a higher authority within the Voltexia Hosting Trust & Safety Team.
+1.9 **“Rereview”** refers to a secondary appeal conducted by a higher authority within the Trust & Safety Team.
 
-1.10 **“Business Day”** – Monday through Friday, excluding U.S. federal holidays observed in Pennsylvania.
+1.10 **“Business Day”** refers to Monday through Friday, excluding U.S. federal holidays observed in Pennsylvania.
 
-1.11 **“Alternative Account”** – Any additional account, profile, or identity created or used by a User to circumvent a suspension, ban, restriction, or any other Enforcement Action, or to gain an unfair or prohibited advantage in relation to the Platform or Services.
+1.11 **“Alternative Account”** refers to any additional account created or used to evade restrictions, conceal identity, or gain unauthorized advantages.
 
 # 2. Acceptance of Terms
-By accessing or using any Service, website, or the Official Discord Server, you agree to be bound by these Terms. If you do not agree, do not use the Platform or Services.
+By accessing or using the Platform or Services, the User acknowledges and agrees to be bound by these Terms. Users who do not agree must discontinue use immediately.
 
 # 3. Prohibited Content & Conduct
 
-### 3.1 No Illegal, Harmful, Unethical, or Questionable Code
+## 3.1 Illegal, Harmful, or Unethical Code
+Users may not upload, store, execute, or distribute any code, software, or files that:
+- Violate applicable laws or regulations.
+- Contain malware, ransomware, spyware, viruses, backdoors, or cryptojacking tools.
+- Facilitate deceptive or fraudulent activity, including phishing kits or scam storefronts.
+- Are deemed questionable or high‑risk at the Company’s sole discretion.
 
-### 3.2 User shall not upload, store, execute, run, host, or distribute on any Voltexia Hosting server any code, software, script, or file that:
-- Violates any applicable local, state, federal, or international law.
-- Is harmful, including malware, ransomware, spyware, viruses, rootkits, backdoors, or cryptojacking software.
-- Is unethical or deceptive (e.g., phishing kits, scam pages, fraudulent storefronts).
-- Is otherwise questionable as determined by the Company in its sole discretion (e.g., darknet relays, anonymizing proxies for illegal activity, carding tools etc.).
+## 3.2 Abusive or Disruptive Code
+Users may not deploy code that intentionally degrades, disrupts, or circumvents the security, stability, or performance of the Company’s infrastructure or other Users’ environments.
 
-### 3.3 No Abusive or Disruptive Code
-Code that intentionally degrades, disrupts, or circumvents the security or performance of the Company’s infrastructure or other Users is strictly forbidden.
+## 3.3 Alternative Accounts
+Users may not create or use Alternative Accounts for any purpose, including:
+- Evading Enforcement Actions.
+- Circumventing billing or resource limits.
+- Abusing promotions, trials, or referral programs.
+- Misrepresenting identity.
 
-### 3.4 No Alternative Accounts
-Users are strictly prohibited from creating or using Alternative Accounts for any reason, including but not limited to:
-- Circumventing a suspension, ban, or other Enforcement Action.
-- Evading billing, resource limits, or promotional restrictions.
-- Abusing free trials, discounts, or referral programs.
-- Misrepresenting identity to avoid detection of prohibited conduct.
-
-*The Company reserves the right to merge, suspend, or permanently terminate all accounts (including the original and any Alternative Accounts) upon discovery of a violation of this section. No refund shall be issued for any terminated accounts.*
+The Company may merge, suspend, or permanently terminate all associated accounts without refund.
 
 # 4. Resource Abuse (Detailed Definition)
 
-Resource Abuse means any pattern or instance of using system resources significantly beyond normal, expected, or fair usage for the subscribed Service tier, including but not limited to:
+Resource Abuse includes, but is not limited to:
 
-**CPU Abuse**: Sustained CPU usage above 90% for more than 2 continuous hours on a shared game/VPS node, or usage that negatively impacts neighboring clients. For dedicated CPU allocations, exceeding the allocated core’s capacity by 200% for more than 1 hour.
+**CPU Abuse:** Sustained CPU usage above 90% for over 2 hours on shared nodes, or exceeding dedicated allocations by 200% for over 1 hour.
 
-**Memory (RAM) Abuse**: Using more than 110% of allocated RAM for more than 15 minutes, or forcing the host system into swap thrashing or OOM (out-of-memory) killer events repeatedly (>3 times in 24 hours).
+**Memory Abuse:** Usage exceeding 110% of allocated RAM for more than 15 minutes, or repeated OOM events (>3 within 24 hours).
 
-**Disk I/O Abuse**: Sustained read/write operations exceeding 200 IOPS or 50 MB/s for 1 hour on HDD-based nodes, or 500 IOPS / 100 MB/s for 30 minutes on NVMe nodes. Includes fork bombing, massive random writes, or intentional disk fragmentation.
+**Disk I/O Abuse:** Excessive read/write operations surpassing defined IOPS or MB/s thresholds, including fork bombs or intentional fragmentation.
 
-**Network Abuse**: Generating outbound traffic exceeding 80% of port speed for 15 minutes without legitimate game server demand; UDP flooding; DDoS attacks (inbound or outbound); port scanning external networks; bittorrent seeding on VPS without prior written approval.
+**Network Abuse:** Outbound traffic exceeding 80% of port speed without legitimate demand, DDoS activity, port scanning, or unauthorized torrenting.
 
-**Inode Abuse**: Exceeding 250,000 files on a shared game hosting plan or 500,000 files on a VPS plan, causing filesystem performance degradation.
+**Inode Abuse:** Exceeding 250,000 files on shared hosting or 500,000 on VPS plans.
 
-**Process Abuse**: Running more than double the allowed concurrent processes (e.g., 200 processes when limit is 100), or creating runaway/zombie processes that avoid normal termination.
+**Process Abuse:** Running more than double the permitted process count or generating runaway/zombie processes.
 
-**Cron/Job Abuse**: Scheduling tasks more frequently than once per 5 minutes unless required by automated game server updates, or running background miners/cryptocurrency tools.
+**Cron/Job Abuse:** Scheduling tasks more frequently than once every 5 minutes without operational necessity.
 
-**Storage Outlier Behavior**: Writing, deleting, and rewriting the same storage sectors repeatedly to degrade SSD lifespan (>50 GB write amplification per hour).
+**Storage Outlier Behavior:** Excessive write amplification exceeding 50 GB per hour.
 
-**NOTE:** *Resource Abuse is evaluated based on a rolling 24-hour window. The Company may throttle, suspend, or terminate Services immediately upon detection of resource abuse without prior notice.*
+**Note:** Resource Abuse is evaluated over a rolling 24‑hour period. The Company may throttle, suspend, or terminate Services immediately upon detection.
 
 # 5. Support System & Communication Abuse
-User shall not:
-- Submit false, duplicate, or intentionally misleading support tickets.
-- Harass, threaten, or use abusive language with support staff via tickets, live chat, or Discord.
-- Open more than 3 support tickets in 24 hours regarding the same unresolved issue.
-- Demand response times faster than stated in Service Level Agreements (if any).
-- Attempt to social engineer support staff into bypassing security or billing controls.
-- Use live chat for bot automation, spam, or flooding.
 
-*Violation may result in permanent revocation of support access and immediate account suspension.*
+Users may not:
+- Submit false, duplicate, or misleading tickets.
+- Harass, threaten, or verbally abuse staff.
+- Open more than three tickets within 24 hours for the same issue.
+- Demand response times beyond stated service levels.
+- Attempt to manipulate or deceive staff.
+- Use live chat for spam, automation, or flooding.
 
-# 6. Official Discord Server Rules agreement & Hosting Account Linkage
+Violations may result in permanent revocation of support access and account suspension.
 
-### 6.1 Compliance with Discord Rules
-All Users in the Official Discord Server must comply with Discord’s Terms of Service, Community Guidelines, and any additional server rules posted by Voltexia Hosting.
+# 6. Discord Rules & Hosting Account Linkage
 
-### 6.2 Ban from Discord May Trigger Hosting Suspension
-If a User is banned from the Official Discord Server:
-- The Company may suspend or terminate the User’s Hosting Account without prior notice.
-- Suspension may be temporary or permanent.
-- No refund is guaranteed.
+## 6.1 Compliance
+Users must comply with Discord’s Terms of Service, Community Guidelines, and all rules established by the Company.
 
-### 6.3 No Right to Re-enter Discord
-A banned User shall not attempt to rejoin via alt accounts, VPNs, or other methods.
+## 6.2 Discord Bans
+A ban from the Official Discord Server may result in suspension or termination of hosting services without refund.
 
-### 6.4 Alternative Accounts on Discord
-Using alt accounts to bypass Discord restrictions may result in termination of all hosting accounts without refund.
+## 6.3 Re‑Entry Prohibition
+Banned Users may not rejoin the Discord Server through Alternative Accounts, VPNs, or other methods.
 
-# 7. Appeals Process for Enforcement Actions
+## 6.4 Alternative Accounts
+Use of Alternative Accounts on Discord may result in termination of all hosting accounts.
 
-### 7.1 Step 1 – Case Review
-User may submit one Case Review including:
+# 7. Appeals Process
+
+## 7.1 Case Review
+Users may submit one Case Review containing:
 - Account email and server ID.
-- Explanation.
-- Evidence.
+- Explanation of the appeal.
+- Supporting evidence.
 
-Response within 14 business days.
+Response time: within 14 Business Days.
 
-### 7.2 Step 2 – Rereview
-User may request one Rereview within 7 business days. Decision is final.
+## 7.2 Rereview
+Users may request one Rereview within 7 Business Days of the Case Review decision. The Rereview decision is final.
 
-### 7.3 Exceptions
-No appeals for:
+## 7.3 Non‑Appealable Actions
+The following are not eligible for appeal:
 - Repeated resource abuse.
 - Illegal content.
 - Fraudulent payments.
@@ -123,67 +120,70 @@ No appeals for:
 
 # 8. Refund Policy
 
-### 8.1 No Expectation of Refunds
-Refunds are not provided except Section 8.2.
+## 8.1 General Policy
+Refunds are not provided except under Section 8.2.
 
-### 8.2 Exclusive Refund Condition
-Refund only if:
-- A promised feature is broken.
-- Company fails to fix within 14 business days.
-- User cooperates fully.
-- Request submitted within 7 days of purchase.
+## 8.2 Exclusive Refund Condition
+A pro‑rated refund may be considered only if:
+- A feature explicitly promised at purchase is materially unusable.
+- The Company fails to resolve the issue within 14 Business Days.
+- The User cooperates fully and provides requested information.
+- The request is submitted within 7 days of purchase.
 
-Refunds are pro-rated and issued to original payment method.
+Refunds are issued only to the original payment method.
 
 # 9. Jurisdiction & Dispute Resolution
 
-### 9.1 Governing Law
-Hong Kong law applies.
+## 9.1 Governing Law
+These Terms are governed by the laws of Hong Kong.
 
-### 9.2 Exclusive Venue
-All disputes handled in Hong Kong courts.
+## 9.2 Venue
+All disputes shall be resolved exclusively in the courts of Hong Kong.
 
-### 9.3 No Class Actions
-User may not file class or representative actions.
+## 9.3 No Class Actions
+Users may not participate in class, collective, or representative actions.
 
-# 10. Company Protection & Miscellaneous Provisions
+# 10. Company Protection & Miscellaneous
 
 10.1 **Limitation of Liability**  
-Company not liable for indirect or consequential damages.
+The Company is not liable for indirect, incidental, or consequential damages. Total liability shall not exceed the amount paid in the preceding three months.
 
 10.2 **Indemnification**  
-User indemnifies Company for violations.
+Users agree to indemnify and hold the Company harmless from claims arising from violations of these Terms.
 
 10.3 **No Warranty**  
-Services provided “AS IS”.
+Services are provided “AS IS” and “AS AVAILABLE.”
 
-10.4 **Right to Modify Terms**  
-Company may modify Terms with notice.
+10.4 **Modification of Terms**  
+The Company may modify these Terms at any time. Continued use constitutes acceptance.
 
 10.5 **Suspension & Termination**  
-Company may suspend or terminate accounts without refund.
+The Company may suspend or terminate accounts immediately for violations, without refund.
 
 10.6 **Force Majeure**  
-Company not liable for events beyond control.
+The Company is not liable for delays caused by events beyond reasonable control.
 
 10.7 **Severability**  
-Invalid provisions do not affect remaining Terms.
+Invalid provisions do not affect the remainder of the Terms.
 
-10.8 **Inactive accounts / environments**  
-Inactive accounts may be deleted without notice.
+10.8 **Inactive Accounts**  
+Inactive accounts or environments may be deleted without notice.
 
-# 11. Official Discord Server Rules, Regulations, and Public Policies
+# 11. Discord Rules & Public Policies
 
-11.1 NSFW content prohibited.  
-- [24H Ban > 7D Ban > 30D Ban > Permanent Ban]
+11.1 **NSFW Content**  
+Strictly prohibited.  
+Penalty ladder: 24H Ban → 7D Ban → 30D Ban → Permanent Ban
 
-11.2 Disruptive behavior prohibited.  
-- [Verbal Warning > 1H Timeout > 24H Timeout > 24H Ban]
+11.2 **Disruptive Behavior**  
+Prohibited.  
+Penalty ladder: Warning → 1H Timeout → 24H Timeout → 24H Ban
 
-11.3 Toxicity prohibited.  
-- [Verbal Warning > 1H Timeout > 24H Timeout > 24H Ban]
+11.3 **Toxicity**  
+Prohibited.  
+Penalty ladder: Warning → 1H Timeout → 24H Timeout → 24H Ban
 
 **Note:**  
-Trust & Safety may exercise judgment. Users may request reviews. Hostility toward staff increases penalties.
+Trust & Safety personnel may exercise discretion. Users may request secondary review. Hostility toward staff may increase penalties.
 
-# By using Voltexia Hosting’s website, Services, or Official Discord Server, you agree to these Terms of Service.
+# By using Voltexia Hosting’s Platform or Services, the User agrees to these Terms of Service.
