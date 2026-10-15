@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Owner Panel - Voltexia Hosting</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header my-4">
+        <h1><a href="/">Voltexia Hosting</a></h1>
+        <div style="position:relative;">
+          <% if (user) { %>
+            <img id="avatar" class="avatar" src="<%= user.avatar %>" alt="avatar" />
+            <div id="avatar-dropdown" class="dropdown">
+              <div><a href="/settings">Settings</a></div>
+              <div><a href="/auth/logout">Logout</a></div>
+            </div>
+          <% } else { %>
+            <a href="/auth/discord" class="btn btn-primary">Login with Discord</a>
+          <% } %>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Owner Panel</h2>
+      </div>
+
+      <div class="card">
+        <h3>Plans</h3>
+        <% plans.forEach(plan => { %>
+          <div class="mb-2">
+            <form method="post" action="/owner/plan/feature/<%= plan._id %>" style="display:inline">
+              <button class="btn btn-<%= plan.featured ? 'success' : 'secondary' %>"><%= plan.featured ? 'Featured' : 'Set Featured' %></button>
+            </form>
+            <form method="post" action="/owner/plan/edit/<%= plan._id %>" style="display:inline">
+              <input name="name" value="<%= plan.name %>" />
+              <input name="price" value="<%= plan.price %>" />
+              <input name="description" value="<%= plan.description %>" />
+              <button class="btn btn-primary">Save</button>
+            </form>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="card">
+        <h3>Users</h3>
+        <% users.forEach(u => { %>
+          <div><%= u.username %> - <%= u.email %> - owner: <%= u.isOwner %></div>
+        <% }) %>
+      </div>
+
+      <div class="card">
+        <h3>Billings</h3>
+        <% billings.forEach(b => { %>
+          <div><%= b.user ? b.user.username : b.user %> - <%= b.amount %> <%= b.currency %></div>
+        <% }) %>
+      </div>
+
+      <footer class="mt-5">
+        <a href="/tos.html">Terms</a> | <a href="/privacy-policy.html">Privacy</a>
+      </footer>
+    </div>
+
+    <script src="/js/client.js"></script>
+  </body>
+</html>
