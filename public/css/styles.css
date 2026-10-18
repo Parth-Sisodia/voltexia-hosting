@@ -1,8 +1,0 @@
-body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-.container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-.header { display: flex; justify-content: space-between; align-items: center; }
-.avatar { width: 40px; height: 40px; border-radius: 9999px; cursor: pointer; }
-.dropdown { position: absolute; right: 20px; background: white; border: 1px solid #ddd; padding: 10px; display: none; }
-.dropdown.show { display: block; }
-.card { border: 1px solid #e5e7eb; padding: 16px; border-radius: 8px; margin-bottom: 12px; }
-.button { background: #2563eb; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; }
